@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+.header-bg {
+  background: #141414;
+}
+
+.header-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* modal ================================== */
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.ativo {
+  display: flex;
+}
+
+.modal {
+  background: white;
+  border: 10px solid #141414;
+  box-shadow: 0 0 0 10px white;
+  padding: 40px;
+  min-width: 300px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.modal label {
+  display: block;
+  margin: 1rem 0 .5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.modal input {
+  width: 100%;
+  padding: .7rem .5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+.modal button[type="submit"] {
+  display: block;
+  padding: 1rem 2rem;
+  border: none;
+  background: tomato;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+.fechar {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  height: 50px;
+  width: 50px;
+  border: 5px solid #141414;
+  background: tomato;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* responsivo ================================== */
+@media (max-width: 550px) {
+  .header-container {
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .menu  {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .menu a {
+    padding: 10px;
+  }
+}

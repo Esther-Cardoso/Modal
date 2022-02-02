@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Modal js</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header class="header-bg">
+		<div class="header-container">
+			<span class="logo">Modal</span>
+        <nav>
+          <ul class="menu">
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a data-modal="abrir" href="./contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+
+  <h1>Clique em Contato para ver o efeito do Modal acontecendo!</h1>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="sua senha">
+      </form>
+      <button type="submit">Entrar</button>
+    </div>
+  </section>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
