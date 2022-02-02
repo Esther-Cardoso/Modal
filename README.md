@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-<img style="height: 600px" src="">
+<img style="height: 600px" src="https://media-exp1.licdn.com/dms/image/C4E22AQEet-6V5y1sCg/feedshare-shrink_2048_1536/0/1643835673782?e=1646870400&v=beta&t=q5bTWelXscoTdxweuPI9U336F-ge3keyKS1lDpz1iFs">
 </p>
 
 <p align="center">
